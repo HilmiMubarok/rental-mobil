@@ -3,7 +3,7 @@
         <div class="sidebar-brand-icon">
             <i class="fas fa-car"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Rental Mobil</div>
+        <div class="sidebar-brand-text mx-3">Joko Trans</div>
     </a>
 
     <hr class="sidebar-divider my-0">
