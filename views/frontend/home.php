@@ -130,7 +130,7 @@
           <div class="col-lg-12">
             <div class="copyright-text">
               <p>
-                Copyright © 2020 Joko Trans Rental
+                Copyright © 2021 Joko Trans Rental
               </p>
               <!-- <p>
                 Copyright © 2020 Joko Trans Rental

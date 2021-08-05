@@ -90,8 +90,19 @@
       	
         <div class="row">
           <div class="col-lg-12">
-            <img src="<?= base_url('front') ?>/assets/images/rental.jpeg" alt="">
+            <div class="row">
+              <div class="col">
+                <img src="<?= base_url('front') ?>/assets/images/banner-image-1-1920x300.jpg" class="img-thumbnail img-fluid">
+              </div>
+              <div class="col">
+                <img src="<?= base_url('front') ?>/assets/images/mobil1.jpg" class="img-thumbnail img-fluid">
+              </div>
+              <div class="col">
+                <img src="<?= base_url('front') ?>/assets/images/mobil2.jpg" class="img-thumbnail img-fluid">
+              </div>
+            </div>
             <p>Salah satu usaha rental mobil di Kecamatan Pegandon tepatnya di Desa Tegorejo yaitu, Rental Mobil Joko Trans. Usaha ini berdiri sejak tahun 2011 tepatnya dibulan Mei. Sampai saat ini Joko Trans memiliki 6 mobil diantaranya 2 unit Elf untuk pariwisata, 2 unit Avanza, 1 Mobilio, dan 1 Brio. Dalam menjalankan bisnis ini Joko Trans bekerja sama dengan teman yang profesinya sama-sama usaha rental mobil untuk mengantisipasi jika sewaktu-waktu kekurangan mobil. Usaha ini dilakukan demi kepuasan pelangan. Persaingan usaha yang semakin ketat dan perkembangan dunia bisnis yang semakin pesat mendorong suatu perusahaan untuk selalu meningkatkan kualitas dan pelayanan kepada konsumennya agar perusahaan tersebut bisa bertahan. Saat ini Joko Trans ingin meningkatkan kualitas pemesanan mobil kepada konsumen yang ada di Pegandon dan sekitarnya .Karena kepuasan konsumen menjadi tolak ukur keberhasilan.</p>
+            <p>
 
           </div>
         </div>
@@ -100,6 +111,7 @@
       </div>
     </section>
 
+
     
     <footer>
       <div class="container">
@@ -107,7 +119,7 @@
           <div class="col-lg-12">
             <div class="copyright-text">
               <p>
-                Copyright © 2020 Joko Trans Rental
+                Copyright © 2021 Joko Trans Rental
               </p>
             </div>
           </div>

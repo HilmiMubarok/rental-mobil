@@ -24,9 +24,9 @@
 
     <hr class="sidebar-divider">
 
-    <div class="sidebar-heading">
+    <!-- <div class="sidebar-heading">
         Master Mobil
-    </div>
+    </div> -->
     
     <li class="nav-item <?= $data == 'merk' ? 'active' : '' ?>">
         <a class="nav-link" href="<?= base_url('merk') ?>">
@@ -60,9 +60,9 @@
     </li> -->
     
     <hr class="sidebar-divider">
-    <div class="sidebar-heading">
+  <!--   <div class="sidebar-heading">
         Master Pesanan
-    </div>
+    </div> -->
 
     <!-- <li class="nav-item < $data == 'perjalanan' ? 'active' : '' ?>">
         <a class="nav-link" href="< base_url('perjalanan') ?>">
