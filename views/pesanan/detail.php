@@ -40,7 +40,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
+						<div class="card shadow">
+							<div class="card-body text-center">
+								<img src="<?= base_url('uploads')."/".$pesanan->foto_pemesan ?>" width="500" class="img-thumbnail">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
 						<div class="card shadow">
 							<div class="card-header">
 								<h6 class="m-0 font-weight-bold text-primary"><?= $judul ?> - <?= $pesanan->nama_pemesan ?></h6>
@@ -84,8 +91,6 @@
 								<hr>
 								<div class="row">
 									<div class="col">
-										<a href="<?= base_url('pesanan/ubah/' . $pesanan->id) ?>" class="btn btn-sm btn-info"><i class="fa fa-pen"></i> Ubah</a>
-         								<a href="<?= base_url('pesanan/hapus/' . $pesanan->id) ?>" class="btn btn-sm btn-danger" onclick="return confirm('apakah anda yakin?')"><i class="fa fa-trash"></i> Hapus</a>
 										<a href="<?= base_url('pesanan') ?>" class="btn btn-sm btn-secondary"><i class="fa fa-reply"></i> Kembali</a>
 									</div>
 								</div>

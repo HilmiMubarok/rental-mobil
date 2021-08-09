@@ -108,7 +108,15 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <ul class="post-tags">
-                          <li><a href="<?= base_url('pemesanan/pesan/'. $data->id) ?>" class="btn btn-primary text-white">Book Now</a></li>
+                          <?php if ($data->status == "Tersedia"): ?>
+                            <li><a href="<?= base_url('pemesanan/pesan')."/".$data->id ?>" class="btn btn-primary text-white">Sewa Sekarang</a></li>
+                          <?php else: ?>
+                            <li>
+                              <button class="btn btn-secondary text-white" disabled>
+                                Telah disewa
+                              </button>
+                            </li>
+                          <?php endif ?>
                         </ul>
                       </div>
                     </div>

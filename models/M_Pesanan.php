@@ -43,4 +43,11 @@ class M_Pesanan extends Model{
 		$query = $this->execute();
 		return $query;
 	}
+
+	public function selesai($data, $id)
+	{
+		$query = $this->update('tbl_pesan', $data, ['id' => $id]);
+		$query = $this->execute();
+		return $query;
+	}
 }

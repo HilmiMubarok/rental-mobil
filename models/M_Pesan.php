@@ -41,7 +41,7 @@ class M_Pesan extends Model{
 	}
 
 	public function detail($id){
-		$query = $this->setQuery("SELECT tbl_pesan.*, tbl_mobil.* FROM tbl_pesan  INNER JOIN tbl_mobil ON tbl_pesan.id_mobil = tbl_mobil.id WHERE tbl_pesan.id = $id");
+		$query = $this->setQuery("SELECT tbl_pesan.*, tbl_mobil.* FROM tbl_pesan  INNER JOIN tbl_mobil ON tbl_pesan.id_mobil = tbl_mobil.id WHERE tbl_mobil.id = $id");
 		$query = $this->execute();
 		return $query;
 	}

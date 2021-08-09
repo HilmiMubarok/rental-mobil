@@ -94,7 +94,7 @@
 												<td><?= $pesanan->dengan_sopir ?></td>
 												<td>
 													<a href="<?= base_url('pesanan/detail/' . $pesanan->id) ?>" class="btn btn-sm btn-warning mb-2"><i class="fa fa-eye"></i> Detail</a>
-													<a href="<?= base_url('pesanan/ubah/' . $pesanan->id) ?>" class="btn btn-sm btn-info mb-2"><i class="fa fa-check"></i> Selesai</a>
+													<a href="<?= base_url('pesanan/selesai/' . $pesanan->id_mobil) ?>" class="btn btn-sm btn-info mb-2"><i class="fa fa-check"></i> Selesai</a>
 												</td>
 											</tr>
 										<?php endwhile; ?>

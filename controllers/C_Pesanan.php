@@ -10,11 +10,11 @@ class C_Pesanan extends Controller {
 		
 		$this->addFunction('web');
 		$this->addFunction('session');
-		$this->req = $this->library('Request');
-		$this->pesanan = $this->model('M_Pesanan');
-		$this->j_bayar = $this->model('M_Jenis_Bayar');
-		$this->mobil = $this->model('M_Mobil');
-		$this->pemesan = $this->model('M_Pemesan');
+		$this->req        = $this->library('Request');
+		$this->pesanan    = $this->model('M_Pesanan');
+		$this->j_bayar    = $this->model('M_Jenis_Bayar');
+		$this->mobil      = $this->model('M_Mobil');
+		$this->pemesan    = $this->model('M_Pemesan');
 		$this->perjalanan = $this->model('M_Perjalanan');
 	}
 
@@ -35,13 +35,13 @@ class C_Pesanan extends Controller {
 	public function tambah(){
 		if(!isset($_POST['tambah'])) redirect('pesanan');
 		$data = [
-			'id_pemesan' => $this->req->post('id_pemesan'),
-			'id_mobil' => $this->req->post('id_mobil'),
-			'id_perjalanan' => $this->req->post('id_perjalanan'),
+			'id_pemesan'     => $this->req->post('id_pemesan'),
+			'id_mobil'       => $this->req->post('id_mobil'),
+			'id_perjalanan'  => $this->req->post('id_perjalanan'),
 			'id_jenis_bayar' => $this->req->post('id_jenis_bayar'),
-			'harga' => $this->req->post('harga'),
-			'tgl_pinjam' => $this->req->post('tgl_pinjam'),
-			'tgl_kembali' => $this->req->post('tgl_kembali'),
+			'harga'          => $this->req->post('harga'),
+			'tgl_pinjam'     => $this->req->post('tgl_pinjam'),
+			'tgl_kembali'    => $this->req->post('tgl_kembali'),
 		];
 
 		if($this->pesanan->tambah($data)){
@@ -71,6 +71,20 @@ class C_Pesanan extends Controller {
 			'pesanan' => $pesanan
 		];
 		$this->view('pesanan/ubah', $data);
+	}
+
+	public function selesai($id)
+	{
+		$data = [
+			'status' => 'Tersedia'
+		];
+		if($this->mobil->ubah($data, $id)){
+			setSession('success', 'Pesanan Telah Selesai!');
+			redirect('pesanan');
+		} else {
+			setSession('error', 'Data gagal diubah!');
+			redirect('pesanan');
+		}
 	}
 
 	public function proses_ubah($id){

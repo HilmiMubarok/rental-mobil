@@ -106,13 +106,13 @@ class C_Mobil extends Controller{
 		$img_name = $img_name . '-' . time();
 
 		$data = [
-			'id_merk' => $this->req->post('id_merk'),
-			'nama' => $this->req->post('nama'),
-			'warna' => $this->req->post('warna'),
+			'id_merk'      => $this->req->post('id_merk'),
+			'nama'         => $this->req->post('nama'),
+			'warna'        => $this->req->post('warna'),
 			'jumlah_kursi' => $this->req->post('jumlah_kursi'),
-			'no_polisi' => $this->req->post('no_polisi'),
-			'tahun_beli' => $this->req->post('tahun_beli'),
-			'gambar' => $img_name . '.' . $ekstensi,
+			'no_polisi'    => $this->req->post('no_polisi'),
+			'tahun_beli'   => $this->req->post('tahun_beli'),
+			'gambar'       => $img_name . '.' . $ekstensi,
 		];
 
 		$gambar_sebelumnya = $this->mobil->detail($id)->fetch_object()->gambar;
